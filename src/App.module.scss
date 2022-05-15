@@ -8,10 +8,22 @@
    nav {
       height: 100%;
    }
+
+   .login-button {
+      float: right;
+   }
+}
+
+.grid-container {
+   padding-top: 2rem;
+}
+
+.no-tracks {
+   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-   .app nav {
+   .app div nav {
       display: none;
    }
 }

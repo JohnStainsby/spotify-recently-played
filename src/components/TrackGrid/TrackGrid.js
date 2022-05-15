@@ -1,4 +1,3 @@
-import React from 'react';
 import { Grid } from '@mantine/core';
 import styles from './TrackGrid.module.scss';
 

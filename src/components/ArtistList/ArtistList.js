@@ -1,11 +1,11 @@
-import React from 'react';
+import { Button } from '@mantine/core';
 import styles from './ArtistList.module.scss';
 
 const ArtistList = ({ items, selectedArtist, setSelectedArtist }) => {
-   // Get list of all artists from recent tracks
+   // Array to store all artists from list of recent tracks
    let artists = [];
 
-   // Return array of artist objects with id and name
+   // Add artist objects to array with id and name
    for (let item of items) {
       for (let artist of item.track.artists) {
          // Check if artist already exists in array
@@ -19,6 +19,7 @@ const ArtistList = ({ items, selectedArtist, setSelectedArtist }) => {
       <div className={styles['artist-list']}>
          <h1>Recent Artists</h1>
          <ul>
+            {/* Show list of recent artists, selecting an artist will filter the grid. Selected artist will show in bold. */}
             {artists.map((item) => (
                <li
                   key={item.id}
@@ -32,14 +33,16 @@ const ArtistList = ({ items, selectedArtist, setSelectedArtist }) => {
             ))}
          </ul>
 
+         {/* If an artist is selected show a button to clear the selection and unfilter the grid. */}
          {selectedArtist ? (
-            <button
+            <Button
+               color='indigo'
                onClick={() => {
-                  setSelectedArtist();
+                  setSelectedArtist(null);
                }}
             >
                Clear Artist Filter
-            </button>
+            </Button>
          ) : null}
       </div>
    );
