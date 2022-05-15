@@ -45,6 +45,7 @@ export const AuthProvider = ({ children }) => {
    // Remove token from local storage to logout
    const logout = () => {
       window.localStorage.removeItem('spotify_token');
+      window.localStorage.removeItem('selected_artist');
       setToken();
    };
 
