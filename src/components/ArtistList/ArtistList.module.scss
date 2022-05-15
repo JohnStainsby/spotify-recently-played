@@ -1,0 +1,11 @@
+.artist-list {
+   padding: 1rem;
+
+   li {
+      cursor: pointer;
+   }
+
+   li.selected {
+      font-weight: 600;
+   }
+}
