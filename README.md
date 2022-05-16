@@ -8,6 +8,7 @@ The grid updates every 30 seconds to show up-to-date information.
 
 ![Screenshot](public/screenshot-example.png)
 
+
 ## Getting Started
 
 1. In the project directory run:
@@ -23,6 +24,7 @@ Note: Spotify requires apps in development mode to manually allow access to user
 4. Tests can be run with:
 
 ### `npm run test`
+
 
 ## Requirements
 
@@ -42,6 +44,7 @@ Note: Spotify requires apps in development mode to manually allow access to user
 
 -  The displayed data should automatically update when a user listens to a new track (within 30 seconds)✅
 
+
 ## About
 
 ### Framework
@@ -51,6 +54,7 @@ The application is built with React using create-react-app to setup for speed an
 Some parts of the application use items from the react CSS/component library Mantine. Other parts have been styled using SASS within CSS modules to scope styles to individual components.
 
 The application uses Testing Library and Jest for automated testing.
+
 
 ## Potential Improvements
 
