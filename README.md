@@ -6,6 +6,8 @@ The sidebar shows a list of recently played artists. Artists can be selected to 
 
 The grid updates every 30 seconds to show up-to-date information.
 
+![Screenshot](public/screenshot-example.png)
+
 ## Getting Started
 
 1. In the project directory run:
