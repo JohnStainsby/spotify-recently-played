@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import ArtistList from './ArtistList';
 
+// Create mock data to represent API call
 const fakeData = [
    {
       track: {
@@ -33,6 +34,8 @@ test('render list', () => {
 test('clear button is hidden when no artist selected', () => {
    render(<ArtistList items={fakeData} />);
    const clearButton = screen.queryByTestId('button-clear-selected');
+
+   //The clear button won't be rendered id no artist is selected so this should be null
    expect(clearButton).toBeNull();
 });
 

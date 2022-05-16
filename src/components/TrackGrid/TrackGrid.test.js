@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import TrackGrid from './TrackGrid';
 
+// Create mock data to represent API call
 const fakeData = [
    {
       track: {
@@ -33,5 +34,7 @@ test('render grid', () => {
 test('filter grid when artist is selected', () => {
    render(<TrackGrid items={fakeData} filterOnArtist='123456' />);
    const items = screen.queryAllByTestId('track-grid-item');
+
+   //There are only 2 artists in the mock data so filtering on 1 should results in only 1 grid item
    expect(items).toHaveLength(1);
 });
